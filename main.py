@@ -1,5 +1,3 @@
-# I need to make an application that can calculate the vector vx and vy taking of base the units of V and the grades.
-
 import math
 
 # result = 10 * math.cos(math.radians(58)) it must be first converted in radians in order to use the sine and cosine with degrees
@@ -22,7 +20,6 @@ def ComponentOperation() :
     print(f'The value for the component {vectorvariable}x is: {operationcos} degrees') 
     print(f'The value for the component {vectorvariable}y is: {operationsin} degrees') 
 
-
     #A version in which we only left 2 floating digits from the result
     #print(f'The value for the component {vectorvariable}x is: {"%.2f" % operationcos} degrees')
     #print(f'The value for the component {vectorvariable}y is: {"%.2f" % operationsin} degrees')
@@ -39,7 +36,6 @@ def ComponentDirection() :
     ArctangOperation = math.degrees(math.atan2(int(ComponentY), int(ComponentX)))
     print(f'The arctang of {ComponentX}/{ComponentY} gave us the direction of {ArctangOperation} degrees')
 
-
     #A version in which we only left 2 floating digits from the result
     #print(f'The arctang of {ComponentX}/{ComponentY} gave us the direction of {"%.2f" % ArctangOperation} degrees')
 
@@ -55,7 +51,6 @@ def ComponentMagnitude() :
     # The operation to find the magnitude
     MagnitudeOperation = math.sqrt(((int(ComponentX) ** 2) + (int(ComponentY) ** 2)))
     print(f'The component of {ComponentX} and {ComponentY} gave us the magnitude of {MagnitudeOperation} units') 
-
 
     #A version in which we only left 2 floating digits from the result
     #print(f'The component of {ComponentX} and {ComponentY} gave us the magnitude of {"%.2f" % MagnitudeOperation} units')
@@ -75,9 +70,6 @@ def FindComponents():
     OperationX = Component1X - Component2X
     OperationY = Component1Y - Component2Y
     print(OperationX, OperationY)
-
-
-
 
 while True :
     option = input('''What do you want to do now?
